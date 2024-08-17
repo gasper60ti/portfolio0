@@ -15,8 +15,10 @@ const Nav = () => {
               pathname.includes("index") || pathname == "/" ? "mil-active" : ""
             }
           >
-            <Link legacyBehavior href="/">Home</Link>
-            <ul>
+            <Link legacyBehavior href="/">
+              Home
+            </Link>
+            {/* <ul>
               <li>
                 <Link legacyBehavior href="/">
                   Type 1
@@ -27,11 +29,11 @@ const Nav = () => {
                   Type 2
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li className={pathname == "/prices" ? "mil-active" : ""}>
             <Link legacyBehavior href="/prices">
-              Prices
+              Services
             </Link>
           </li>
           <li className={pathname == "/portfolio" ? "mil-active" : ""}>

@@ -26,15 +26,15 @@ const Index = () => {
         {/* about */}
         <About />
         {/* about end */}
-        {/* skills */}
-        <Skills />
-        {/* skills end */}
-        {/* education */}
-        <Education />
-        {/* education end */}
         {/* experience */}
         <Experience />
         {/* experience end */}
+        {/* education */}
+        <Education />
+        {/* education end */}
+        {/* skills */}
+        <Skills />
+        {/* skills end */}
         {/* services */}
         <Services />
         {/* services end */}

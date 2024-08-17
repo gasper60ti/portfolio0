@@ -9,9 +9,9 @@ const Skills = () => {
       <div className="container">
         <div>
           <p className="mil-upper mil-mb-30">
-            My great <span className="mil-accent">work</span>
+            I do <span className="mil-accent">much more, </span> but anyways...
           </p>
-          <h2 className="mil-up mil-mb-60">Ability or Skill</h2>
+          <h2 className="mil-up mil-mb-60">Technologies & Frameworks</h2>
         </div>
         <div className="row">
           <div className="col-xl-2" />
@@ -27,9 +27,9 @@ const Skills = () => {
                   <div className="mil-progress-inline">
                     <span className="mil-upper">Figma</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "60%" }}>
+                      <div className="mil-progress" style={{ width: "85%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          60%
+                          85%
                         </span>
                       </div>
                     </div>
@@ -40,11 +40,11 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-php" />
+                      <i className="fab fa-laravel" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">PHP / C++</span>
+                    <span className="mil-upper">Php / laravel</span>
                     <div className="mil-progress-track">
                       <div className="mil-progress" style={{ width: "80%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
@@ -59,15 +59,34 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-js" />
+                      <i className="fab fa-python" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">JavaScript</span>
+                    <span className="mil-upper">Python</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "75%" }}>
+                      <div className="mil-progress" style={{ width: "70%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          75%
+                          70%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6 mil-mb-40">
+                <div className="mil-text-row">
+                  <div className="mil-icon-box">
+                    <div className="mil-text-icon no-textured">
+                      <i className="fab fa-java" />
+                    </div>
+                  </div>
+                  <div className="mil-progress-inline">
+                    <span className="mil-upper">Java / Spring</span>
+                    <div className="mil-progress-track">
+                      <div className="mil-progress" style={{ width: "85%" }}>
+                        <span className="mil-upper mil-upper-sm mil-accent">
+                          85%
                         </span>
                       </div>
                     </div>
@@ -84,9 +103,9 @@ const Skills = () => {
                   <div className="mil-progress-inline">
                     <span className="mil-upper">React / Next.js</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "75%" }}>
+                      <div className="mil-progress" style={{ width: "80%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          75%
+                          80%
                         </span>
                       </div>
                     </div>
@@ -97,15 +116,34 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-html5" />
+                      <i className="fab fa-docker" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">HTML5 / CSS3</span>
+                    <span className="mil-upper">Docker / Kubernetes</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "90%" }}>
+                      <div className="mil-progress" style={{ width: "65%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          90%
+                          65%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6 mil-mb-40">
+                <div className="mil-text-row">
+                  <div className="mil-icon-box">
+                    <div className="mil-text-icon no-textured">
+                      <i className="fab fa-node" />
+                    </div>
+                  </div>
+                  <div className="mil-progress-inline">
+                    <span className="mil-upper">Express.js / Nest.js</span>
+                    <div className="mil-progress-track">
+                      <div className="mil-progress" style={{ width: "75%" }}>
+                        <span className="mil-upper mil-upper-sm mil-accent">
+                          75%
                         </span>
                       </div>
                     </div>
@@ -116,15 +154,15 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-vuejs" />
+                      <i className="fab fa-angular" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">Vue.js</span>
+                    <span className="mil-upper">Angular</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "55%" }}>
+                      <div className="mil-progress" style={{ width: "65%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          55%
+                          65%
                         </span>
                       </div>
                     </div>

@@ -9,22 +9,23 @@ const Contact = () => {
         <p className="mil-upper mil-mb-30">
           Contact <span className="mil-accent">me</span>
         </p>
-        <h2 className="mil-up mil-mb-60">Let's get you an estimate</h2>
+        <h2 className="mil-up mil-mb-60">Let's Talk!</h2>
         <div className="row justify-content-between">
           <div className="col-lg-4">
             <div className="mil-contact-card mil-mb-30">
               <p className="mil-upper mil-mb-30">Email</p>
               <p>
-                <a href="mailto:hello@treto.co">hello@treto.co</a>
+                <a href="mailto:nasr.fliti@gmail.com">nasr.fliti@gmail.com</a>
                 <br />
-                <a href="mailto:hello@treto.co">projects@treto.co</a>
+                <a href="mailto:n.fliti@esi-sba.dz">n.fliti@esi-sba.dz</a>
               </p>
             </div>
             <div className="mil-contact-card mil-mb-30">
               <p className="mil-upper mil-mb-30">Phone</p>
               <p>
-                <a href="tel+5636366060">+ 56 3636 60 60</a> <br />
-                <a href="tel+5663630606">+ 56 6363 06 06</a>
+                <a>+213 540 13 78 42</a>
+                {/* <br />
+                <a href="tel+5663630606">+ 56 6363 06 06</a> */}
               </p>
             </div>
           </div>

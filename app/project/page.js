@@ -1,11 +1,39 @@
 import TretoLayout from "@/layout/TretoLayout";
 import dynamic from "next/dynamic";
-const ProjectDetailsIsotope = dynamic(
-  () => import("@/components/ProjectDetailsIsotope"),
+import ProjectDetailsIsotope from "@/components/ProjectDetailsIsotope";
+
+const images = [
   {
-    ssr: false,
-  }
-);
+    src: "img/portfolio/1.jpg",
+    alt: "cover",
+    category: "architecture",
+    size: "mil-long",
+  },
+  {
+    src: "img/portfolio/2.jpg",
+    alt: "cover",
+    category: "interior",
+    size: "mil-square",
+  },
+  {
+    src: "img/portfolio/3.jpg",
+    alt: "cover",
+    category: "sustainable",
+    size: "mil-square",
+  },
+  {
+    src: "img/portfolio/4.jpg",
+    alt: "cover",
+    category: "interior",
+    size: "mil-square",
+  },
+  {
+    src: "img/portfolio/5.jpg",
+    alt: "cover",
+    category: "sustainable",
+    size: "mil-square",
+  },
+];
 const page = () => {
   return (
     <TretoLayout noFooter>
@@ -54,7 +82,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-              <ProjectDetailsIsotope />
+              <ProjectDetailsIsotope images={images} />
               <div className="row">
                 <div className="col-lg-12">
                   <h3 className="mil-up mil-mb-30">Quam Mollis</h3>

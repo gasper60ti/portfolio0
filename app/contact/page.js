@@ -13,17 +13,19 @@ const page = () => {
               <p className="mil-upper mil-mb-30">
                 Contact <span className="mil-accent">me</span>
               </p>
-              <h2 className="mil-up mil-mb-30">Let's get you an estimate</h2>
+              <h2 className="mil-up mil-mb-30">Let's Talk!</h2>
               <p className="mil-left-offset">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor <br /> incididunt ut labore et dolore magna
-                aliqua.
+                Whether you're interested in collaborating on a project or
+                simply want to connect, feel free to reach out.
+                <br />
+                I'm always open to discussing new opportunities and ideas. Let's
+                make something great together!
               </p>
             </div>
             <div className="mil-contact">
               <div className="row justify-content-between">
                 <div className="col-lg-4">
-                  <div className="mil-contact-card mil-mb-30">
+                  {/* <div className="mil-contact-card mil-mb-30">
                     <p className="mil-upper mil-mb-30">
                       About <span className="mil-accent">me</span>
                     </p>
@@ -33,28 +35,31 @@ const page = () => {
                       Miami, FL <br />
                       United States of America
                     </p>
-                  </div>
+                  </div> */}
                   <div className="mil-contact-card mil-mb-30">
-                    <p className="mil-upper mil-mb-30">Email</p>
+                    <p className="mil-upper mil-accent mil-mb-30">Email</p>
                     <p>
-                      <a href="mailto:hello@treto.co">hello@treto.co</a>
+                      <a href="mailto:nasr.fliti@gmail.com">
+                        nasr.fliti@gmail.com
+                      </a>
                       <br />
-                      <a href="mailto:hello@treto.co">projects@treto.co</a>
+                      <a href="mailto:n.fliti@esi-sba.dz">n.fliti@esi-sba.dz</a>
                     </p>
                   </div>
                   <div className="mil-contact-card mil-mb-30">
-                    <p className="mil-upper mil-mb-30">Chats</p>
+                    <p className="mil-upper mil-accent mil-mb-30">Chats</p>
                     <p>
-                      <a href="tel:+123456789">Telegram</a>
+                      <a href="https://t.me/gasper60ti">Telegram</a>
                       <br />
-                      <a href="tel:+123456789">WhatsApp</a>
+                      <a href="https://wa.me/+213676638317">WhatsApp</a>
                     </p>
                   </div>
                   <div className="mil-contact-card mil-mb-90">
-                    <p className="mil-upper mil-mb-30">Phone</p>
+                    <p className="mil-upper mil-accent mil-mb-30">Phone</p>
                     <p>
-                      <a href="tel+5636366060">+ 56 3636 60 60</a> <br />
-                      <a href="tel+5663630606">+ 56 6363 06 06</a>
+                      <a>+213 540 13 78 42</a>
+                      {/* <br />
+                      <a>+ 56 6363 06 06</a> */}
                     </p>
                   </div>
                 </div>

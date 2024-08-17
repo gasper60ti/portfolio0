@@ -17,8 +17,8 @@ const Footer1 = () => {
   return (
     <div className="mil-footer">
       <p className="mil-upper mil-upper-sm">
-        © {new Date().getFullYear()} <span className="mil-accent">Treto.</span>{" "}
-        All rights reserved.
+        © {new Date().getFullYear()}{" "}
+        <span className="mil-accent">Gasper.Creates.</span> All rights reserved.
       </p>
     </div>
   );

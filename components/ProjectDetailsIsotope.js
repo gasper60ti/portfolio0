@@ -1,9 +1,11 @@
 "use client";
 import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
-const ProjectDetailsIsotope = () => {
+
+const ProjectDetailsIsotope = ({ images = [] }) => {
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
+
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".mil-portfolio-grid", {
@@ -32,42 +34,17 @@ const ProjectDetailsIsotope = () => {
   return (
     <div className="mil-portfolio-grid mil-mb-60">
       <div className="grid-sizer" />
-      <div className="mil-grid-item architecture">
-        <div className="mil-project-img mil-long mil-mb-30">
-          <a href="img/portfolio/1.jpg" className="mfp-image">
-            <img src="img/portfolio/1.jpg" alt="cover" />
-          </a>
+      {images.map((image, index) => (
+        <div className={`mil-grid-item ${image.category}`} key={index}>
+          <div className={`mil-project-img ${image.size} mil-mb-30`}>
+            <a href={image.src} className="mfp-image">
+              <img src={image.src} alt={image.alt} />
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="mil-grid-item interior">
-        <div className="mil-project-img mil-square mil-mb-30">
-          <a href="img/portfolio/2.jpg" className="mfp-image">
-            <img src="img/portfolio/2.jpg" alt="cover" />
-          </a>
-        </div>
-      </div>
-      <div className="mil-grid-item sustainable">
-        <div className="mil-project-img mil-square mil-mb-30">
-          <a href="img/portfolio/3.jpg" className="mfp-image">
-            <img src="img/portfolio/3.jpg" alt="cover" />
-          </a>
-        </div>
-      </div>
-      <div className="mil-grid-item interior">
-        <div className="mil-project-img mil-square mil-mb-30">
-          <a href="img/portfolio/4.jpg" className="mfp-image">
-            <img src="img/portfolio/4.jpg" alt="cover" />
-          </a>
-        </div>
-      </div>
-      <div className="mil-grid-item sustainable">
-        <div className="mil-project-img mil-square mil-mb-30">
-          <a href="img/portfolio/5.jpg" className="mfp-image">
-            <img src="img/portfolio/5.jpg" alt="cover" />
-          </a>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
+
 export default ProjectDetailsIsotope;

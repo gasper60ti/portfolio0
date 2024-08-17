@@ -50,31 +50,41 @@ const PortfolioIsotope = () => {
             <li>
               <a
                 href="#"
-                className={`c-pointer ${activeBtn("fil-link")}`}
-                onClick={handleFilterKeyChange("fil-link")}
-                data-filter=".fil-link"
+                className={`c-pointer ${activeBtn("fil-startups")}`}
+                onClick={handleFilterKeyChange("fil-startups")}
+                data-filter=".fil-startups"
               >
-                Link
+                Startups
               </a>
             </li>
             <li>
               <a
                 href="#"
-                data-filter=".fil-gallery"
-                className={`c-pointer ${activeBtn("fil-gallery")}`}
-                onClick={handleFilterKeyChange("fil-gallery")}
+                data-filter=".fil-analysis"
+                className={`c-pointer ${activeBtn("fil-analysis")}`}
+                onClick={handleFilterKeyChange("fil-analysis")}
               >
-                Gallery
+                Analysis
               </a>
             </li>
             <li>
               <a
                 href="#"
-                data-filter=".fil-image"
-                className={`c-pointer ${activeBtn("fil-image")}`}
-                onClick={handleFilterKeyChange("fil-image")}
+                data-filter=".fil-graphics"
+                className={`c-pointer ${activeBtn("fil-graphics")}`}
+                onClick={handleFilterKeyChange("fil-graphics")}
               >
-                Image
+                Graphics
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-filter=".fil-others"
+                className={`c-pointer ${activeBtn("fil-others")}`}
+                onClick={handleFilterKeyChange("fil-others")}
+              >
+                Others
               </a>
             </li>
           </ul>
@@ -84,22 +94,40 @@ const PortfolioIsotope = () => {
         <div className="mil-portfolio-grid mil-mb-30">
           <div className="grid-sizer" />
           <div className="mil-grid-item fil-link">
-            <Link legacyBehavior href="/project">
+            <Link legacyBehavior href="/project/tripx">
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
-                  <img src="/img/portfolio/1.jpg" alt="cover" />
+                  <img src="/img/portfolio/tripx/main.jpg" alt="cover" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-link" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  <p className="mil-upper mil-accent mil-mb-15">
+                    Startup project
+                  </p>
+                  <h4 className="mil-up">TripX</h4>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mil-grid-item fil-link">
+            <Link legacyBehavior href="/project">
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/4.jpg" alt="cover" />
                   <div className="mil-hover-link">
                     <i className="fas fa-link" />
                   </div>
                 </div>
                 <div className="mil-project-descr">
                   <p className="mil-upper mil-accent mil-mb-15">Link</p>
-                  <h4 className="mil-up">The Woman In Red Walking</h4>
+                  <h4 className="mil-up">Space Exploration</h4>
                 </div>
               </div>
             </Link>
           </div>
-          <div className="mil-grid-item fil-gallery">
+          <div className="mil-grid-item fil-startups">
             <a
               href="#gallery-1"
               className="mil-portfolio-item mil-long-item mil-mb-60 mfp-gallery"
@@ -138,23 +166,7 @@ const PortfolioIsotope = () => {
               </div>
             </a>
           </div>
-          <div className="mil-grid-item fil-link">
-            <Link legacyBehavior href="/project">
-              <div className="mil-portfolio-item mil-long-item mil-mb-60">
-                <div className="mil-cover">
-                  <img src="/img/portfolio/4.jpg" alt="cover" />
-                  <div className="mil-hover-link">
-                    <i className="fas fa-link" />
-                  </div>
-                </div>
-                <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
-                  <h4 className="mil-up">Space Exploration</h4>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="mil-grid-item fil-gallery">
+          <div className="mil-grid-item fil-analysis">
             <a
               href="#gallery-2"
               className="mil-portfolio-item mil-long-item mil-mb-60 mfp-gallery"
@@ -193,7 +205,7 @@ const PortfolioIsotope = () => {
             </Link>
           </div>
         </div>
-        <div className="mil-pagination-panel">
+        {/* <div className="mil-pagination-panel">
           <ul className="mil-pagination-numbers">
             <li className="mil-active">
               <a href="#.">01</a>
@@ -240,7 +252,7 @@ const PortfolioIsotope = () => {
             </div>
             <div className="mil-reviews-pagination mil-upper mil-mb-30" />
           </div>
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );

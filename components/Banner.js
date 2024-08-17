@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Banner = ( { bgImage = "img/faces/6.jpg" } ) => {
+const Banner = ({ bgImage = "img/faces/6.jpg" }) => {
   return (
     <div className="mil-section mil-banner mil-banner-right">
       <div className="container-full">
@@ -17,14 +17,15 @@ const Banner = ( { bgImage = "img/faces/6.jpg" } ) => {
                   style={{ top: 0, left: "-82%" }}
                 />
                 <p className="mil-upper mil-mb-30">
-                  Graphic <span className="mil-accent">and</span> Web Developer
+                  Software Developer <span className="mil-accent">and</span>{" "}
+                  Graphic Designer
                 </p>
-                <h1 className="mil-up mil-mb-40">Sophie Miller</h1>
+                <h1 className="mil-up mil-mb-40">Nasreddine FLITI</h1>
                 <div className="mil-short mil-left-offset">
                   <p className="mil-mb-30">
-                    From France, Paris. I have rich experience in web design,
-                    also I am good at wordpress. I love to talk with you about
-                    our unique.
+                    From Algeria. 5th-year Engineering student at ESI SBA with a
+                    passion for creating innovative digital experiences through
+                    software development and visual design.
                   </p>
                   <div className="mil-buttons-frame">
                     <Link legacyBehavior href="/portfolio">
@@ -39,11 +40,7 @@ const Banner = ( { bgImage = "img/faces/6.jpg" } ) => {
             </div>
           </div>
           <div className="col-xl-5">
-            <img
-              src={bgImage}
-              alt="face"
-              className="mil-banner-image"
-            />
+            <img src={bgImage} alt="face" className="mil-banner-image" />
           </div>
         </div>
       </div>

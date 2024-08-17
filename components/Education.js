@@ -12,67 +12,67 @@ const Education = () => {
               <p className="mil-upper mil-mb-30">Certificates</p>
               <h2 className="mil-up mil-mb-60">Education</h2>
               <p>
-                Extensive education in developing web pages using: HTML5, CSS3,
-                SASS, JavaScript, React JS, Angular JS, JQuery, JSON, Node.js,
-                Bootstrap.
+                Extensive education including Web development, Database
+                management, Operating systems, Computer networks, Software
+                engineering, and Information systems design..
               </p>
             </div>
           </div>
           <div className="col-xl-6">
             <div className="mil-icon-box mil-mb-40">
               <div className="mil-text-icon">
-                <a href="img/certificate.jpg" className="mfp-image">
+                <a href="img/engineer.jpg" className="mfp-image">
                   +
                 </a>
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Backend Programming
+                  école supérieure d'informatique de SBA
                 </p>
                 <p className="mil-upper mil-upper-sm mil-mb-30">
-                  2020 <span className="mil-accent">to</span> 2021
+                  2022 <span className="mil-accent">to</span> now
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining unchanged.
+                  5th year computer science engineering student studying courses
+                  about advanced databases, machine learning, IoT, semantic web,
+                  cloud computing, and GIS
                 </p>
               </div>
             </div>
             <div className="mil-icon-box mil-mb-40">
               <div className="mil-text-icon">
-                <a href="img/certificate.jpg" className="mfp-image">
+                <a href="img/prepa.jpg" className="mfp-image">
                   +
                 </a>
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Master in Graphic
+                  école supérieure d'informatique (ex INI) d'alger
                 </p>
                 <p className="mil-upper mil-upper-sm mil-mb-30">
-                  2019 <span className="mil-accent">to</span> 2020
+                  2020 <span className="mil-accent">to</span> 2022
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining unchanged.
+                  Completed the preparatory cycle in computer science
+                  engineering where I got my foundation in the field.
                 </p>
               </div>
             </div>
             <div className="mil-icon-box">
               <div className="mil-text-icon">
-                <a href="img/certificate.jpg" className="mfp-image">
+                <a href="img/bac.jpg" className="mfp-image">
                   +
                 </a>
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Bachelors of FineArt
+                  Baccalaureate Degree
                 </p>
-                <p className="mil-upper mil-upper-sm mil-mb-30">
-                  2017 <span className="mil-accent">to</span> 2018
-                </p>
+                <p className="mil-upper mil-upper-sm mil-mb-30">2020</p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining unchanged.
+                  Got my scientific baccalaureate degree with an excellent
+                  grade, which allowed joining one of the finest schools in the
+                  country.
                 </p>
               </div>
             </div>

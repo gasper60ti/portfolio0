@@ -6,6 +6,7 @@ const PortfolioIsotope = dynamic(
     ssr: false,
   }
 );
+
 const page = () => {
   return (
     <TretoLayout noFooter>
@@ -22,9 +23,10 @@ const page = () => {
               </p>
               <h2 className="mil-up mil-mb-30">Portfolio</h2>
               <p className="mil-left-offset">
-                A Collection of my favorites project I’ve designed recently.{" "}
+                Explore a curated selection of my work,
                 <br />
-                Feeling great while sharing here.
+                Each project reflects my commitment to quality, creativity, and
+                technical excellence.
               </p>
             </div>
           </div>

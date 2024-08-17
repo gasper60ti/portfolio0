@@ -14,7 +14,7 @@ const Experience = () => {
       />
       <div className="container">
         <p className="mil-upper mil-mb-30">
-          A Decade of <span className="mil-accent">work</span>
+          My proffesional roles <span className="mil-accent">as a student</span>
         </p>
         <h2 className="mil-up mil-mb-60">Experience</h2>
         <div className="row">
@@ -70,13 +70,18 @@ const Experience = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
-                    <p className="mil-upper mil-text-lg mil-mb-15">Freelance</p>
+                    <p className="mil-upper mil-text-lg mil-mb-15">
+                      OURQUILANE
+                    </p>
                     <p className="mil-upper mil-mb-30">
-                      <span className="mil-accent">today</span>
+                      <span className="mil-accent">today</span> - JR Software
+                      Developer
+                    </p>
+                    <p className="mil-mb-10">
+                      HR ERP system using Angular, Nest.Js and PostgreSQL.
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                      Yalidine Express desktop reception app using Electron.js
                     </p>
                   </div>
                 </div>
@@ -85,28 +90,15 @@ const Experience = () => {
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      Agency MacLL
+                      Algiers Marriott Hotels Bab Ezzouar
                     </p>
                     <p className="mil-upper mil-mb-30">
-                      2019 <span className="mil-accent">to</span> 2022
+                      <span className="mil-accent">Sep. 2023</span> It Intern
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="mil-icon-box mil-type-2 mil-mb-30">
-                  <div className="mil-box-text">
-                    <p className="mil-upper mil-text-lg mil-mb-15">Envato</p>
-                    <p className="mil-upper mil-mb-30">
-                      2017 <span className="mil-accent">to</span> 2019
-                    </p>
-                    <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                      Led transformative project in customer review analysis,
+                      using ELK Stack, GPT APIs, React.Js to generate actionable
+                      insights.
                     </p>
                   </div>
                 </div>
@@ -115,14 +107,36 @@ const Experience = () => {
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      Themeforest
+                      CSE Students Club
                     </p>
                     <p className="mil-upper mil-mb-30">
-                      2014 <span className="mil-accent">to</span> 2017
+                      <span className="mil-accent">Sep. 2021 .. Aug. 2023</span>{" "}
+                      - Executive Office member
+                    </p>
+                    <p className="mil-mb-10">
+                      Multimedia team leader (led my team to cover the biggest
+                      hackathon in term of participants in Algeria)
+                    </p>
+                    <p className="mil-mb-10">
+                      Marketing department manager (50% grow up in social media)
+                    </p>
+                    <p>Students workshops trainer (Python, Adobe AE...)</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div className="mil-icon-box mil-type-2 mil-mb-30">
+                  <div className="mil-box-text">
+                    <p className="mil-upper mil-text-lg mil-mb-15">
+                      Marriott Renaissance Hotel Tlemcen
+                    </p>
+                    <p className="mil-upper mil-mb-30">
+                      <span className="mil-accent">Sep. 2021</span> - It Intern
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                      My first internship in an enterprise where I learned a lot
+                      about information security, databases, SAAS and
+                      organizations systems.
                     </p>
                   </div>
                 </div>

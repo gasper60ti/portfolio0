@@ -4,12 +4,64 @@ const page = () => {
   return (
     <TretoLayout noFooter>
       <div>
-        <div className="mil-page">
+        {/* <div className="mil-page"> */}
+        {/* TMP VVVVVV */}
+        <div className="mil-top-banner">
           <div
             className="mil-bg-item"
             style={{ top: "3%", right: "15%", transform: "rotate(-45deg)" }}
           />
+          {/* TEMP */}
+          <div
+            className="mil-bg-item mil-bg-item-large"
+            style={{ top: "10%", right: "15%", transform: "rotate(-35deg)" }}
+          />
           <div className="container">
+            <div className="row justify-content-between align-items-center">
+              <div className="col-xl-4">
+                <div className="mil-about-person mil-mb-30">
+                  <img
+                    src="img/icons/services.jpg"
+                    alt="Sophie Miller"
+                    className="mil-avatar"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-7">
+                <div className="row">
+                  <div className="col-xl-12">
+                    <p className="mil-upper mil-mb-30">
+                      Services are under
+                      <span className="mil-accent"> study...</span>
+                    </p>
+                    <h2 className="mil-up mil-mb-60">
+                      Coming<span className="mil-accent"> Soon!</span>
+                    </h2>
+                    <p className="mil-mb-30">
+                      I'm in the process of crafting a range of services
+                      tailored to meet your needs. Whether you're looking for
+                      software development, design expertise, or something else,
+                      I'll soon have offerings that can help you achieve your
+                      goals.
+                    </p>
+                    <p className="mil-mb-30">
+                      Please check back soon for more details. In the meantime,
+                      feel free to explore my portfolio or reach out
+                      directly—I’d love to hear how I can assist you!
+                    </p>
+                    <div className="mil-buttons-frame">
+                      <Link legacyBehavior href="/contact">
+                        <a className="mil-button">Contact me!</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* TEMP */}
+
+          {/* <div className="container">
             <div className="mil-top-banner">
               <p className="mil-upper mil-mb-30">
                 Pricing <span className="mil-accent">table</span>
@@ -129,7 +181,7 @@ const page = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </TretoLayout>
