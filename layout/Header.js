@@ -33,16 +33,16 @@ const DefaultHeader = () => {
         <ul>
           <li>
             <a
-              href="https://facebook.com"
+              href="https://www.behance.net/gaspercreates"
               target="_blank"
               className="social-icon"
             >
-              <i className="fab fa-facebook" />
+              <i className="fab fa-behance" />
             </a>
           </li>
           <li>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/gaspercreates"
               target="_blank"
               className="social-icon"
             >
@@ -51,7 +51,7 @@ const DefaultHeader = () => {
           </li>
           <li>
             <a
-              href="https://linkedin.com"
+              href="https://dz.linkedin.com/in/fliti"
               target="_blank"
               className="social-icon"
             >
@@ -60,7 +60,7 @@ const DefaultHeader = () => {
           </li>
           <li>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/channel/UCRtFaLerrGJDwXTePHz3zXA"
               target="_blank"
               className="social-icon"
             >
@@ -87,16 +87,16 @@ const Header1 = () => {
         <ul>
           <li>
             <a
-              href="https://facebook.com"
+              href="https://www.behance.net/gaspercreates"
               target="_blank"
               className="social-icon"
             >
-              <i className="fab fa-facebook" />
+              <i className="fab fa-behance" />
             </a>
           </li>
           <li>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/gaspercreates"
               target="_blank"
               className="social-icon"
             >
@@ -105,7 +105,7 @@ const Header1 = () => {
           </li>
           <li>
             <a
-              href="https://linkedin.com"
+              href="https://dz.linkedin.com/in/fliti"
               target="_blank"
               className="social-icon"
             >
@@ -114,7 +114,7 @@ const Header1 = () => {
           </li>
           <li>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/channel/UCRtFaLerrGJDwXTePHz3zXA"
               target="_blank"
               className="social-icon"
             >

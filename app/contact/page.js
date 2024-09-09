@@ -1,5 +1,54 @@
+"use client";
 import TretoLayout from "@/layout/TretoLayout";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import emailjs from "emailjs-com";
+import { useState } from "react";
 const page = () => {
+  const [formData, setFormData] = useState({
+    reciever: "Nasreddine",
+    name: "",
+    email: "",
+    tel: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
+    emailjs.send(serviceID, templateID, formData, userID).then(
+      (result) => {
+        console.log("Email successfully sent!", result.text);
+        toast.success("Email sent successfully!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        setTimeout(() => {
+          window.location.href = "/"; // Redirect to the main page
+        }, 3000);
+      },
+      (error) => {
+        console.log("Failed to send email:", error.text);
+        toast.error("Failed to send email.");
+      }
+    );
+  };
+
   return (
     <TretoLayout noFooter>
       <div>
@@ -64,30 +113,66 @@ const page = () => {
                   </div>
                 </div>
                 <div className="col-lg-7">
-                  <form id="cform" className="cform" method="post">
+                  {/* <form id="cform" className="cform" method="post"> */}
+                  <form
+                    id="cform"
+                    className="cform"
+                    method="post"
+                    onSubmit={sendEmail}
+                  >
                     <label className="mil-upper">
                       Your full name <span className="mil-accent">*</span>
                     </label>
-                    <input type="text" className="mil-mb-30" name="name" />
+                    <input
+                      type="text"
+                      className="mil-mb-30"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                    />
                     <label className="mil-upper">
                       Your email address <span className="mil-accent">*</span>
                     </label>
-                    <input type="email" className="mil-mb-30" name="email" />
-                    <label className="mil-upper">
+                    <input
+                      type="email"
+                      className="mil-mb-30"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                    {/* <label className="mil-upper">
                       Your phone number <span className="mil-accent">*</span>
                     </label>
-                    <input type="tel" className="mil-mb-30" name="tel" />
+                    <input
+                      type="tel"
+                      className="mil-mb-30"
+                      name="tel"
+                      value={formData.tel}
+                      onChange={handleInputChange}
+                      required
+                    /> */}
                     <label className="mil-upper">
                       Subject <span className="mil-accent">*</span>
                     </label>
-                    <input type="text" className="mil-mb-30" name="subject" />
+                    <input
+                      type="text"
+                      className="mil-mb-30"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      required
+                    />
                     <label className="mil-upper">
                       Tell me your ideas <span className="mil-accent">*</span>
                     </label>
                     <textarea
                       className="mil-mb-30"
                       name="message"
-                      defaultValue={""}
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
                     />
                     <label className="mil-checkbox mil-mb-30">
                       by sending the message you accept the{" "}
@@ -99,6 +184,7 @@ const page = () => {
                       Submit
                     </button>
                   </form>
+
                   <div className="alert-success" style={{ display: "none" }}>
                     <h5>Thanks, your message is sent successfully.</h5>
                   </div>
@@ -107,6 +193,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </TretoLayout>
   );

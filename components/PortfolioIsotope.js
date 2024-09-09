@@ -93,7 +93,7 @@ const PortfolioIsotope = () => {
       <div className="container">
         <div className="mil-portfolio-grid mil-mb-30">
           <div className="grid-sizer" />
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item fil-startups">
             <Link legacyBehavior href="/project/tripx">
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
@@ -111,95 +111,90 @@ const PortfolioIsotope = () => {
               </div>
             </Link>
           </div>
-          <div className="mil-grid-item fil-link">
-            <Link legacyBehavior href="/project">
+          <div className="mil-grid-item fil-analysis">
+            <Link legacyBehavior href="/project/stage2cs">
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
-                  <img src="/img/portfolio/4.jpg" alt="cover" />
+                  <img src="/img/portfolio/stage2cs/main.jpg" alt="cover" />
                   <div className="mil-hover-link">
                     <i className="fas fa-link" />
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
-                  <h4 className="mil-up">Space Exploration</h4>
+                  <p className="mil-upper mil-accent mil-mb-15">
+                    Analysis Project
+                  </p>
+                  <h4 className="mil-up">Costumer reviews analysis</h4>
                 </div>
               </div>
             </Link>
           </div>
           <div className="mil-grid-item fil-startups">
-            <a
-              href="#gallery-1"
-              className="mil-portfolio-item mil-long-item mil-mb-60 mfp-gallery"
-            >
-              <div className="mil-cover">
-                <img src="/img/portfolio/2.jpg" alt="cover" />
-                <div className="mil-hover-link">
-                  <i className="fas fa-plus" />
-                </div>
-              </div>
-              <div className="mil-project-descr">
-                <p className="mil-upper mil-accent mil-mb-15">Gallery</p>
-                <h4 className="mil-up">White Mountains</h4>
-              </div>
-            </a>
-            <div id="gallery-1" className="mfp-hide">
-              <a href="img/portfolio/2.jpg" />
-              <a href="img/portfolio/3.jpg" />
-              <a href="img/portfolio/4.jpg" />
-            </div>
-          </div>
-          <div className="mil-grid-item fil-image">
-            <a
-              href="img/portfolio/3.jpg"
-              className="mil-portfolio-item mil-square-item mil-mb-60 mfp-image"
-            >
-              <div className="mil-cover">
-                <img src="/img/portfolio/3.jpg" alt="cover" />
-                <div className="mil-hover-link">
-                  <i className="fas fa-search-plus" />
-                </div>
-              </div>
-              <div className="mil-project-descr">
-                <p className="mil-upper mil-accent mil-mb-15">Image</p>
-                <h4 className="mil-up">Aesthetic Buildings</h4>
-              </div>
-            </a>
-          </div>
-          <div className="mil-grid-item fil-analysis">
-            <a
-              href="#gallery-2"
-              className="mil-portfolio-item mil-long-item mil-mb-60 mfp-gallery"
-            >
-              <div className="mil-cover">
-                <img src="/img/portfolio/5.jpg" alt="cover" />
-                <div className="mil-hover-link">
-                  <i className="fas fa-plus" />
-                </div>
-              </div>
-              <div className="mil-project-descr">
-                <p className="mil-upper mil-accent mil-mb-15">Gallery</p>
-                <h4 className="mil-up">Aceanic Colors</h4>
-              </div>
-            </a>
-            <div id="gallery-2" className="mfp-hide">
-              <a href="img/portfolio/5.jpg" />
-              <a href="img/portfolio/3.jpg" />
-              <a href="img/portfolio/4.jpg" />
-            </div>
-          </div>
-          <div className="mil-grid-item fil-link">
-            <Link legacyBehavior href="/project">
-              <div className="mil-portfolio-item mil-square-item mil-mb-60">
+            <Link legacyBehavior href="/project/s9illo">
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
-                  <img src="/img/portfolio/6.jpg" alt="cover" />
+                  <img src="/img/portfolio/s9illo/main.jpg" alt="cover" />
                   <div className="mil-hover-link">
                     <i className="fas fa-link" />
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
-                  <h4 className="mil-up">Contact Modern</h4>
+                  <p className="mil-upper mil-accent mil-mb-15">
+                    Startup project
+                  </p>
+                  <h4 className="mil-up">S9illo</h4>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mil-grid-item fil-startups">
+            <Link legacyBehavior href="/project/nutriboost">
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/nutriboost/main.jpg" alt="cover" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-link" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  <p className="mil-upper mil-accent mil-mb-15">
+                    Startup project
+                  </p>
+                  <h4 className="mil-up">NutriBoost</h4>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mil-grid-item fil-others">
+            <Link legacyBehavior href="/project/cse">
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/cse/main.jpg" alt="cover" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-search-plus" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  <p className="mil-upper mil-accent mil-mb-15">
+                    Students activities
+                  </p>
+                  <h4 className="mil-up">CSE Club</h4>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mil-grid-item fil-graphics">
+            <Link legacyBehavior href="/project/wh">
+              <div className="mil-portfolio-item mil-square-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/wh/main.jpg" alt="cover" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-search-plus" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  <p className="mil-upper mil-accent mil-mb-15">Graphics</p>
+                  <h4 className="mil-up">Wled Horma Podcast</h4>
                 </div>
               </div>
             </Link>

@@ -163,10 +163,10 @@ const page = () => {
               </div>
             </div>
             <div className="mil-pagination-panel">
-              <a href="#" className="mil-button mil-type-2 mil-mb-30">
-                Previous Project
+              <a href="/portfolio" className="mil-button mil-type-2 mil-mb-30">
+                Return to Portfolio
               </a>
-              <a href="#" className="mil-button mil-mb-30">
+              <a href="/project/stage2cs" className="mil-button mil-mb-30">
                 Next Project
               </a>
             </div>
