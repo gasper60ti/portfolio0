@@ -9,6 +9,7 @@ import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import Pagination from "@/layout/Pagination";
 import TretoLayout from "@/layout/TretoLayout";
+
 import { onepage } from "@/utility/onepage";
 import { useEffect } from "react";
 const Index = () => {

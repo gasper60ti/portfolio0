@@ -1,3 +1,4 @@
+"use client";
 export const tretoUtility = {
   topBarActive() {
     var mainMenu = document.querySelector(".mil-top-panel");

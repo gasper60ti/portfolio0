@@ -1,3 +1,4 @@
+"use client";
 // TechnologyEnum.js
 export const TechnologyEnum = {
   NEXTJS: {

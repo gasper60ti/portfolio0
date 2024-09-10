@@ -1,5 +1,5 @@
+"use client";
 import TretoLayout from "@/layout/TretoLayout";
-import dynamic from "next/dynamic";
 import ProjectDetailsIsotope from "@/components/ProjectDetailsIsotope";
 
 const images = [
