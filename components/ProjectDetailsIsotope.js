@@ -1,5 +1,4 @@
 "use client";
-import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
 
 const ProjectDetailsIsotope = ({ images = [] }) => {
@@ -7,7 +6,8 @@ const ProjectDetailsIsotope = ({ images = [] }) => {
   const [filterKey, setFilterKey] = useState("*");
 
   useEffect(() => {
-    setTimeout(() => {
+    setTimeout(async () => {
+      const Isotope = (await import("isotope-layout")).default;
       isotope.current = new Isotope(".mil-portfolio-grid", {
         itemSelector: ".mil-grid-item",
         percentPosition: true,
