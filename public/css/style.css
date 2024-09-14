@@ -2261,3 +2261,11 @@ contact
 .mil-contact-card a:hover {
   color: #fa4729;
 }
+.mil-hyperlink {
+    text-decoration: none;
+  color: inherit;
+  transition: 0.3s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-hyperlink:hover {
+  color: #fa4729;
+}

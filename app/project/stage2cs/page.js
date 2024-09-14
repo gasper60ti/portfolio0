@@ -9,56 +9,35 @@ import Contributors from "@/components/Contributors";
 
 const projectLinksData = [
   {
-    name: "Frontend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_front.git",
+    name: "Documentation",
+    link: "https://drive.google.com/file/d/1RoEwJYJvzExrRo_Ua0sbS6OCI_HtCuhm",
   },
   {
-    name: "Backend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_back.git",
-  },
-  {
-    name: "Docs",
-    link: "https://drive.google.com/drive/folders/1eLmeNnm-4lh1n76RdFg6y7ih-ijBvdUe",
+    name: "Dataset",
+    link: "https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe",
   },
 ];
 
 const contributorsData = [
   {
-    name: "Ilyes",
-    link: "https://www.linkedin.com/in/ilyas-benhammadi/",
+    name: "Mohammed El Amin",
+    link: "https://www.linkedin.com/in/mohammed-el-amin-oukebdane-90181b1b4/",
   },
   {
-    name: "Hakim",
-    link: "https://www.linkedin.com/in/hakim-allem/",
+    name: "Achour",
+    link: "https://www.linkedin.com/in/achour-ouahab/",
   },
-  {
-    name: "Moustafa",
-    link: "https://www.linkedin.com/in/zahdour-moustafa/",
-  },
-  {
-    name: "Dr. Bedjaoui",
-    link: "https://www.linkedin.com/in/bedjaoui-mohammed/",
-  },
+];
+const selectedTechnologies = [
+  TechnologyEnum.REACT,
+  TechnologyEnum.TAILWINDCSS,
+  TechnologyEnum.ELK,
+  TechnologyEnum.GPT_3_5,
+  TechnologyEnum.KAGGLE_DATASETS,
+  TechnologyEnum.UBUNTU,
+  TechnologyEnum.VS_CODE,
 ];
 
-const selectedTechnologies = [
-  TechnologyEnum.NEXTJS,
-  TechnologyEnum.REACT,
-  TechnologyEnum.TYPESCRIPT,
-  TechnologyEnum.SHADCN,
-  TechnologyEnum.TAILWINDCSS,
-  TechnologyEnum.STRIPE,
-  TechnologyEnum.SPRING,
-  TechnologyEnum.NESTJS,
-  TechnologyEnum.MONGODB,
-  TechnologyEnum.POSTGRESQL,
-  TechnologyEnum.REDIS,
-  TechnologyEnum.KAFKA,
-  TechnologyEnum.DOCKER,
-  TechnologyEnum.GITLAB,
-  TechnologyEnum.NGINX,
-  TechnologyEnum.GOOGLE_CLOUD,
-];
 const images = [
   {
     src: "../img/portfolio/tripx/1.jpg",
@@ -99,10 +78,10 @@ const page = () => {
           <div className="container">
             <div className="mil-top-banner mil-text-center">
               <p className="mil-upper mil-mb-30">
-                <span className="mil-accent">Frontend & Backend & DevOps</span>
+                <span className="mil-accent">Internship project</span>
               </p>
               <h2 className="mil-up mil-mb-60">
-                TripX: multi-agency booking platform
+                Hotel Reviews Sentiment Analysis
               </h2>
               <UsedTechnologies technologies={selectedTechnologies} />
             </div>
@@ -112,10 +91,13 @@ const page = () => {
                 <div className="col-lg-8">
                   <div className="mil-mb-60" />
                   <p className="mil-mb-30">
-                    As part of the pluridisciplinary project of the 4th year of
-                    our school, my team and I have created a digital solution
-                    called TripX. TripX is a micro-services based booking
-                    platform, for travel and hike agencies.
+                    This project was carried out during my fourth-year
+                    internship at Algiers Marriott Hotel Bab-Ezzouar. The aim
+                    was to develop a digital solution to analyze customer
+                    reviews of hotels using Big Data tools. The system collects
+                    customer reviews, performs sentiment analysis using GPT-3.5,
+                    and generates action plans for service improvement based on
+                    the analysis.
                   </p>
                 </div>
                 <div className="col-lg-4">
@@ -132,42 +114,47 @@ const page = () => {
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    For the frontend, the platform is composed of the client
-                    website, and 3 management dashboards. The client website
-                    allows users to book trips and hikes, and manage their
-                    bookings. The admin dashboard allow the admin to manage the
-                    users, travel and hike agencies. Each agency has a dashboard
-                    interface that allows the travel/hike agent to manage the
-                    trips and hikes, bookings and reviews. For the backend, the
-                    architecture is composed of 10 micro services, all
-                    subscribed to a kafka broker.
-                    <br />I was responsible for the UX design, the frontend part
-                    of the website and I too contributed to the architecture
-                    design, and the development of the entire platform.
+                    For the frontend, a user interface was developed using
+                    React.js and Tailwind CSS, featuring dashboards that
+                    visualize data insights and sentiment analysis results.
+                    Kibana was employed to generate visualizations, including
+                    bar graphs, pie charts, and geographical maps.
+                    <br />
+                    <br />
+                    The backend and big data architecture was built using the
+                    ELK Stack (Elasticsearch, Logstash, Kibana, and Filebeat),
+                    which collects, processes, and stores large datasets of
+                    hotel reviews. The data was enriched via Logstash, analyzed
+                    with Elasticsearch, and visualized through Kibana
+                    dashboards.
                   </p>
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    The frontend part was developed using NextJS, Shadcn/ui and
-                    Tailwind CSS, and the backend, using SpringBoot, NestJS,
-                    MongoDB, PostgreSQL, Redis, Apache Kafka and Stripe for
-                    online payments. This project was my first micro services
-                    project, and it was a great opportunity to learn more about
-                    Spring, NestJS, CQRS and event-driven architectures.
+                    Sentiment analysis was conducted using GPT-3.5 to extract
+                    key insights from customer reviews, identifying strengths,
+                    weaknesses, and overall sentiment. JSON-based action plans
+                    were generated to suggest service improvements.
                     <br />
-                    For the DevOps part, the entire infrastructure was deployed
-                    on a GCP virtual machine. We used Gitlab CI/CD to automate
-                    code deliveries, and Docker/Docker-compose to orchestrate
-                    the containers with an Nginx reverse proxy.
+                    Initially, we aimed to source data from APIs like
+                    TripAdvisor and Booking.com, but due to access limitations,
+                    we used Kaggle datasets containing over 500,000 reviews. The
+                    project faced challenges with API access and web scraping,
+                    which were resolved by switching to publicly available
+                    datasets.
+                    <br />
+                    The system was deployed on an Ubuntu virtual machine with
+                    Elasticsearch and Kibana, and Visual Studio Code was used
+                    for development and dependency management with npm.
                   </p>
                 </div>
               </div>
             </div>
             <div className="mil-pagination-panel">
-              <a href="#" className="mil-button mil-type-2 mil-mb-30">
+              <a href="tripx" className="mil-button mil-type-2 mil-mb-30">
                 Previous Project
               </a>
-              <a href="#" className="mil-button mil-mb-30">
+              <a href="s9illo" className="mil-button mil-mb-30">
                 Next Project
               </a>
             </div>

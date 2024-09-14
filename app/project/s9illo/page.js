@@ -9,55 +9,53 @@ import Contributors from "@/components/Contributors";
 
 const projectLinksData = [
   {
-    name: "Frontend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_front.git",
-  },
-  {
-    name: "Backend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_back.git",
-  },
-  {
-    name: "Docs",
+    name: "Documentation",
     link: "https://drive.google.com/drive/folders/1eLmeNnm-4lh1n76RdFg6y7ih-ijBvdUe",
   },
 ];
 
 const contributorsData = [
   {
-    name: "Ilyes",
-    link: "https://www.linkedin.com/in/ilyas-benhammadi/",
+    name: "Akram",
+    link: "https://www.linkedin.com/in/mohamed-akram-bennacer-634504204/",
   },
   {
-    name: "Hakim",
-    link: "https://www.linkedin.com/in/hakim-allem/",
+    name: "Zakaria",
+    link: "https://www.linkedin.com/in/zakaria-belhadj-28442b20a/",
   },
   {
-    name: "Moustafa",
-    link: "https://www.linkedin.com/in/zahdour-moustafa/",
+    name: "Hodhaifa",
+    link: "https://www.linkedin.com/in/hodhaifa-benouaklil-b26679235/",
   },
   {
-    name: "Dr. Bedjaoui",
-    link: "https://www.linkedin.com/in/bedjaoui-mohammed/",
+    name: "Houssem",
+    link: "https://www.linkedin.com/in/houssem-talbi-07056122a/",
+  },
+  {
+    name: "Mohammed",
+    link: "https://www.linkedin.com/in/mohammed-abdelkader-kaddour-572986252/",
+  },
+  {
+    name: "Dr. Sehad ",
+    link: "https://www.linkedin.com/in/dr-abdenour-sehad-0b864912a/",
+  },
+  {
+    name: "Dr. Mahfoudi ",
+    link: "/404",
   },
 ];
-
 const selectedTechnologies = [
-  TechnologyEnum.NEXTJS,
-  TechnologyEnum.REACT,
-  TechnologyEnum.TYPESCRIPT,
-  TechnologyEnum.SHADCN,
-  TechnologyEnum.TAILWINDCSS,
-  TechnologyEnum.STRIPE,
-  TechnologyEnum.SPRING,
-  TechnologyEnum.NESTJS,
-  TechnologyEnum.MONGODB,
-  TechnologyEnum.POSTGRESQL,
-  TechnologyEnum.REDIS,
-  TechnologyEnum.KAFKA,
-  TechnologyEnum.DOCKER,
-  TechnologyEnum.GITLAB,
-  TechnologyEnum.NGINX,
-  TechnologyEnum.GOOGLE_CLOUD,
+  TechnologyEnum.REACT_NATIVE,
+  TechnologyEnum.ARDUINO,
+  TechnologyEnum.RASPBERRY_PI,
+  TechnologyEnum.FIREBASE,
+  TechnologyEnum.PYTHON,
+  TechnologyEnum.SQLITE,
+  TechnologyEnum.JAVASCRIPT,
+  TechnologyEnum.TRELLO,
+  TechnologyEnum.GITHUB,
+  TechnologyEnum.VS_CODE,
+  TechnologyEnum.OPENWEATHER_API,
 ];
 const images = [
   {
@@ -99,10 +97,10 @@ const page = () => {
           <div className="container">
             <div className="mil-top-banner mil-text-center">
               <p className="mil-upper mil-mb-30">
-                <span className="mil-accent">Frontend & Backend & DevOps</span>
+                <span className="mil-accent">IOT, Mobile development</span>
               </p>
               <h2 className="mil-up mil-mb-60">
-                TripX: multi-agency booking platform
+                S9illo: Smart Plant Irrigation System
               </h2>
               <UsedTechnologies technologies={selectedTechnologies} />
             </div>
@@ -112,10 +110,15 @@ const page = () => {
                 <div className="col-lg-8">
                   <div className="mil-mb-60" />
                   <p className="mil-mb-30">
-                    As part of the pluridisciplinary project of the 4th year of
-                    our school, my team and I have created a digital solution
-                    called TripX. TripX is a micro-services based booking
-                    platform, for travel and hike agencies.
+                    This project was developed as part of our second-year
+                    academic work at L'école superieure d'informatique (ESI) in
+                    Algeria. The goal was to design and implement an automatic
+                    plant irrigation system using IoT technologies, aimed at
+                    efficiently managing home gardens or small agricultural
+                    spaces. The system monitors soil moisture, temperature, and
+                    humidity levels using sensors and controls the irrigation
+                    process accordingly. Users can manage the system via a
+                    mobile application.
                   </p>
                 </div>
                 <div className="col-lg-4">
@@ -132,42 +135,40 @@ const page = () => {
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    For the frontend, the platform is composed of the client
-                    website, and 3 management dashboards. The client website
-                    allows users to book trips and hikes, and manage their
-                    bookings. The admin dashboard allow the admin to manage the
-                    users, travel and hike agencies. Each agency has a dashboard
-                    interface that allows the travel/hike agent to manage the
-                    trips and hikes, bookings and reviews. For the backend, the
-                    architecture is composed of 10 micro services, all
-                    subscribed to a kafka broker.
-                    <br />I was responsible for the UX design, the frontend part
-                    of the website and I too contributed to the architecture
-                    design, and the development of the entire platform.
+                    For the frontend of the smart irrigation system, a mobile
+                    app was developed using React Native to allow users to
+                    control the irrigation system. It includes real-time
+                    visualizations of sensor data such as soil moisture,
+                    temperature, and humidity, and integrates weather forecasts
+                    via the OpenWeather API. Users can switch between automatic,
+                    manual, or programmed irrigation modes.
+                    <br />
+                    <br />
+                    The backend of the system comprises a Raspberry Pi connected
+                    to multiple Arduinos, each monitoring specific plants. The
+                    Raspberry Pi acts as a hub, controlling irrigation based on
+                    sensor data and user commands. Local data storage is handled
+                    by SQLite, while cloud synchronization is achieved via
+                    Firebase. The I2C protocol was used for communication
+                    between the Raspberry Pi and Arduinos.
                   </p>
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    The frontend part was developed using NextJS, Shadcn/ui and
-                    Tailwind CSS, and the backend, using SpringBoot, NestJS,
-                    MongoDB, PostgreSQL, Redis, Apache Kafka and Stripe for
-                    online payments. This project was my first micro services
-                    project, and it was a great opportunity to learn more about
-                    Spring, NestJS, CQRS and event-driven architectures.
-                    <br />
-                    For the DevOps part, the entire infrastructure was deployed
-                    on a GCP virtual machine. We used Gitlab CI/CD to automate
-                    code deliveries, and Docker/Docker-compose to orchestrate
-                    the containers with an Nginx reverse proxy.
+                    The mobile app also included features such as QR code
+                    authentication for linking accounts and real-time data
+                    visualization of environmental factors. Deployment was done
+                    locally using a Raspberry Pi setup, with mobile control
+                    handled through Firebase.
                   </p>
                 </div>
               </div>
             </div>
             <div className="mil-pagination-panel">
-              <a href="#" className="mil-button mil-type-2 mil-mb-30">
+              <a href="stage2cs" className="mil-button mil-type-2 mil-mb-30">
                 Previous Project
               </a>
-              <a href="#" className="mil-button mil-mb-30">
+              <a href="nutriboost" className="mil-button mil-mb-30">
                 Next Project
               </a>
             </div>

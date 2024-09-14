@@ -39,20 +39,17 @@ const Reviews = () => {
                     <div className="col-lg-1" />
                     <div className="col-lg-7">
                       <p className="mil-mb-30">
-                        J'ai eu l'opportunité de travailler avec Nasreddine pour
-                        le développement d'une application d'impression de
-                        tickets intégrée dans notre système de gestion de file
-                        d'attente « Qapp ». Nasreddine s'est montré non
-                        seulement compétent, mais aussi très sérieux et engagé
-                        dans son travail. Il a su parfaitement comprendre nos
-                        besoins et a livré une solution robuste et efficace basé
-                        sur React JS et Electron JS. Grâce à son travail, nous
-                        avons pu améliorer considérablement notre flux de
-                        travail, tout en offrant une expérience utilisateur
-                        fluide. Je recommande vivement Nasreddine pour tout
-                        projet nécessitant des compétences en React JS, Electron
-                        JS, ou pour tout développement
-                        d'applications sur mesure.
+                        I had the opportunity to work with Nasreddine on the
+                        development of a ticket printing application integrated
+                        into our queue management system, 'Qapp'. Nasreddine
+                        proved to be not only competent but also very serious
+                        and dedicated to his work. He perfectly understood our
+                        needs and delivered a robust and efficient solution
+                        based on React JS and Electron JS. Thanks to his work,
+                        we were able to significantly improve our workflow while
+                        providing a seamless user experience. I highly recommend
+                        Nasreddine for any project requiring skills in React JS,
+                        Electron JS, or custom application development.
                       </p>
                       <p className="mil-upper mil-text-lg mil-mb-15">
                         Hamza <span className="mil-accent">Benterki</span>
@@ -107,12 +104,22 @@ const Reviews = () => {
                     <div className="col-lg-1" />
                     <div className="col-lg-7">
                       <p className="mil-mb-30">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Integer aliquet auctor ex vel facilisis. Sed ipsum ante,
-                        placerat id dignissim quis, porttitor vitae nisi.
-                        Maecenas malesuada tempor nibh, vitae condimentum sem
-                        dictum a. Nunc mattis et felis sit amet commodo. Cras
-                        odio odio, bibendum vel mollis et, ultricies sed est.
+                        I am very pleased to endorse Nasreddine for his
+                        exemplary performance during his internship in our IT
+                        department. He consistently demonstrated a strong
+                        understanding of fundamental IT concepts, along with a
+                        keen interest in expanding his knowledge. Nasreddine
+                        successfully completed his internship project on time,
+                        showcasing not only technical skills but also effective
+                        time management abilities. During his internship, he
+                        displayed a commendable attitude, maintaining a
+                        disciplined approach to work with a strong focus on the
+                        objectives at hand. His dedication to learning and
+                        proactive problem-solving approach was impressive. I am
+                        confident that Nasreddine will continue to excel in his
+                        future endeavors, and I highly recommend him for any
+                        professional opportunities that align with his skills
+                        and aspirations.
                       </p>
                       <p className="mil-upper mil-text-lg mil-mb-15">
                         Achour <span className="mil-accent">Ouahab</span>
