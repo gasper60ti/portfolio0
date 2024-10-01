@@ -10,22 +10,26 @@ import Contributors from "@/components/Contributors";
 const projectLinksData = [
   {
     name: "Frontend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_front.git",
+    link: "https://github.com/hakimalem/nutriBoost/",
   },
   {
     name: "Backend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_back.git",
+    link: "https://github.com/abdelaliichou/Dragos-backend",
   },
   {
     name: "Docs",
-    link: "https://drive.google.com/drive/folders/1eLmeNnm-4lh1n76RdFg6y7ih-ijBvdUe",
+    link: "https://drive.google.com/drive/folders/1hfJCvXQUwDerOZTVia5w7ftsrm7g77F4",
+  },
+  {
+    name: "Presentation",
+    link: "https://docs.google.com/presentation/d/1ogU8perj3-iq7mqmeuDIs51xpHQig3tD/edit?usp=drive_link&ouid=114416011124728949375&rtpof=true&sd=true",
   },
 ];
 
 const contributorsData = [
   {
-    name: "Ilyes",
-    link: "https://www.linkedin.com/in/ilyas-benhammadi/",
+    name: "Abdelali",
+    link: "https://www.linkedin.com/in/abdelali-ichou-60ab8222a/",
   },
   {
     name: "Hakim",
@@ -36,56 +40,57 @@ const contributorsData = [
     link: "https://www.linkedin.com/in/zahdour-moustafa/",
   },
   {
+    name: "Chiheb",
+    link: "https://www.linkedin.com/in/chiheb-sakhraoui/",
+  },
+  {
     name: "Dr. Bedjaoui",
     link: "https://www.linkedin.com/in/bedjaoui-mohammed/",
   },
 ];
-
 const selectedTechnologies = [
-  TechnologyEnum.NEXTJS,
   TechnologyEnum.REACT,
-  TechnologyEnum.TYPESCRIPT,
-  TechnologyEnum.SHADCN,
   TechnologyEnum.TAILWINDCSS,
-  TechnologyEnum.STRIPE,
-  TechnologyEnum.SPRING,
-  TechnologyEnum.NESTJS,
+  TechnologyEnum.NODE,
+  TechnologyEnum.EXPRESS,
   TechnologyEnum.MONGODB,
-  TechnologyEnum.POSTGRESQL,
-  TechnologyEnum.REDIS,
-  TechnologyEnum.KAFKA,
-  TechnologyEnum.DOCKER,
-  TechnologyEnum.GITLAB,
-  TechnologyEnum.NGINX,
-  TechnologyEnum.GOOGLE_CLOUD,
+  TechnologyEnum.JAVASCRIPT,
+  TechnologyEnum.UML,
+  TechnologyEnum.FIGMA,
+  TechnologyEnum.DRAW_IO,
+  TechnologyEnum.CLICKUP,
+  TechnologyEnum.GITHUB,
+  TechnologyEnum.POSTMAN,
+  TechnologyEnum.JAVA_MOBILE,
 ];
 const images = [
   {
-    src: "../img/portfolio/tripx/1.jpg",
+    src: "../img/portfolio/nutriboost/1.jpg",
     alt: "cover",
     category: "architecture",
     size: "mil-long",
   },
+
   {
-    src: "../img/portfolio/tripx/2.jpg",
+    src: "../img/portfolio/nutriboost/2.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/3.jpg",
+    src: "../img/portfolio/nutriboost/3.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/4.jpg",
+    src: "../img/portfolio/nutriboost/4.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/5.jpg",
+    src: "../img/portfolio/nutriboost/5.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
@@ -99,10 +104,12 @@ const page = () => {
           <div className="container">
             <div className="mil-top-banner mil-text-center">
               <p className="mil-upper mil-mb-30">
-                <span className="mil-accent">Frontend & Backend & DevOps</span>
+                <span className="mil-accent">
+                  Frontend & Backend & Project management
+                </span>
               </p>
               <h2 className="mil-up mil-mb-60">
-                TripX: multi-agency booking platform
+                NutriBoost: E-commerce Platform for Dietary Products
               </h2>
               <UsedTechnologies technologies={selectedTechnologies} />
             </div>
@@ -112,10 +119,19 @@ const page = () => {
                 <div className="col-lg-8">
                   <div className="mil-mb-60" />
                   <p className="mil-mb-30">
-                    As part of the pluridisciplinary project of the 4th year of
-                    our school, my team and I have created a digital solution
-                    called TripX. TripX is a micro-services based booking
-                    platform, for travel and hike agencies.
+                    NutriBoost is an e-commerce solution developed during a
+                    three-month academic project in our third year at the Higher
+                    School of Computer Science. The platform is designed to sell
+                    dietary and orthopedic nutrition products. It includes
+                    features such as product listing, searching, ordering,
+                    payment processing, and a management system for both
+                    customers and administrators.
+                    <br />
+                    The project followed the Scrum methodology, with a focus on
+                    iterative development and task management through sprints.
+                    Risk management, project visualization tools like Gantt
+                    charts and PERT charts, and collaboration tools were also
+                    key aspects of the project management process.
                   </p>
                 </div>
                 <div className="col-lg-4">
@@ -132,42 +148,44 @@ const page = () => {
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    For the frontend, the platform is composed of the client
-                    website, and 3 management dashboards. The client website
-                    allows users to book trips and hikes, and manage their
-                    bookings. The admin dashboard allow the admin to manage the
-                    users, travel and hike agencies. Each agency has a dashboard
-                    interface that allows the travel/hike agent to manage the
-                    trips and hikes, bookings and reviews. For the backend, the
-                    architecture is composed of 10 micro services, all
-                    subscribed to a kafka broker.
-                    <br />I was responsible for the UX design, the frontend part
-                    of the website and I too contributed to the architecture
-                    design, and the development of the entire platform.
+                    For the frontend, NutriBoost was developed using React.js
+                    and Tailwind CSS to ensure a responsive and user-friendly
+                    interface for both the web and mobile applications. The
+                    platform supports browsing, filtering, and searching for
+                    products, and includes features like product
+                    recommendations, reviews, and a wishlist. Additionally, the
+                    admin panel allows efficient management of products, orders,
+                    and users. The backend, built with Node.js and Express.js,
+                    handles user authentication, payment processing, and the
+                    order lifecycle. MongoDB is utilized for storing user and
+                    product data.
                   </p>
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    The frontend part was developed using NextJS, Shadcn/ui and
-                    Tailwind CSS, and the backend, using SpringBoot, NestJS,
-                    MongoDB, PostgreSQL, Redis, Apache Kafka and Stripe for
-                    online payments. This project was my first micro services
-                    project, and it was a great opportunity to learn more about
-                    Spring, NestJS, CQRS and event-driven architectures.
+                    Project management was structured using ClickUp, allowing
+                    for effective task division, sprint planning, and backlog
+                    management. We used tools like UML, PERT, and Gantt charts
+                    to monitor progress and identify potential challenges,
+                    ensuring deadlines were met. The risk matrix enabled
+                    proactive identification of potential roadblocks.
                     <br />
-                    For the DevOps part, the entire infrastructure was deployed
-                    on a GCP virtual machine. We used Gitlab CI/CD to automate
-                    code deliveries, and Docker/Docker-compose to orchestrate
-                    the containers with an Nginx reverse proxy.
+                    <br />
+                    Key Features of the project included a customer service
+                    module, purchase history management, product recommendation
+                    systems, parcel tracking, reviews, loyalty clubs, and an
+                    admin panel. Notifications, push alerts, and social media
+                    sharing were also implemented to enhance customer
+                    engagement.
                   </p>
                 </div>
               </div>
             </div>
             <div className="mil-pagination-panel">
-              <a href="#" className="mil-button mil-type-2 mil-mb-30">
+              <a href="s9illo" className="mil-button mil-type-2 mil-mb-30">
                 Previous Project
               </a>
-              <a href="#" className="mil-button mil-mb-30">
+              <a href="cse" className="mil-button mil-mb-30">
                 Next Project
               </a>
             </div>

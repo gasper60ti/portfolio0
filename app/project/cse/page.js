@@ -3,94 +3,85 @@ import TretoLayout from "@/layout/TretoLayout";
 import dynamic from "next/dynamic";
 import ProjectDetailsIsotope from "@/components/ProjectDetailsIsotope";
 import UsedTechnologies from "@/components/UsedTechnologies";
+import SocialMedia from "@/components/SocialMedia";
+import WebSites from "@/components/WebSites";
 import { TechnologyEnum } from "@/utility/TechnologyEnum";
-import ProjectLinks from "@/components/ProjectLinks";
-import Contributors from "@/components/Contributors";
 
-const projectLinksData = [
+const socialMediaData = [
   {
-    name: "Frontend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_front.git",
+    name: "Instagram",
+    link: "https://www.instagram.com/cse.club/",
   },
   {
-    name: "Backend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_back.git",
+    name: "Facebook",
+    link: "https://web.facebook.com/club.scientifique.esi/",
   },
   {
-    name: "Docs",
-    link: "https://drive.google.com/drive/folders/1eLmeNnm-4lh1n76RdFg6y7ih-ijBvdUe",
+    name: "X",
+    link: "https://x.com/csesi_club",
+  },
+  {
+    name: "Youtube",
+    link: "https://www.youtube.com/user/ClubScientifiqueESI",
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/company/cse-club",
   },
 ];
 
-const contributorsData = [
+const webSitesData = [
   {
-    name: "Ilyes",
-    link: "https://www.linkedin.com/in/ilyas-benhammadi/",
+    name: "CSE Website",
+    link: "https://www.cse.club/",
   },
   {
-    name: "Hakim",
-    link: "https://www.linkedin.com/in/hakim-allem/",
-  },
-  {
-    name: "Moustafa",
-    link: "https://www.linkedin.com/in/zahdour-moustafa/",
-  },
-  {
-    name: "Dr. Bedjaoui",
-    link: "https://www.linkedin.com/in/bedjaoui-mohammed/",
+    name: "Tresor ESI",
+    link: "https://tresor.cse.club/",
   },
 ];
 
 const selectedTechnologies = [
-  TechnologyEnum.NEXTJS,
-  TechnologyEnum.REACT,
-  TechnologyEnum.TYPESCRIPT,
-  TechnologyEnum.SHADCN,
-  TechnologyEnum.TAILWINDCSS,
-  TechnologyEnum.STRIPE,
-  TechnologyEnum.SPRING,
-  TechnologyEnum.NESTJS,
-  TechnologyEnum.MONGODB,
-  TechnologyEnum.POSTGRESQL,
-  TechnologyEnum.REDIS,
-  TechnologyEnum.KAFKA,
-  TechnologyEnum.DOCKER,
-  TechnologyEnum.GITLAB,
-  TechnologyEnum.NGINX,
-  TechnologyEnum.GOOGLE_CLOUD,
+  TechnologyEnum.DIGITAL_MARKETING,
+  TechnologyEnum.MULTIMEDIA_PRODUCTION,
+  TechnologyEnum.NETWORKING,
+  TechnologyEnum.TECH_EVENTS_MAKING,
+  TechnologyEnum.TEAM_MANAGEMENT,
+  TechnologyEnum.MORE,
 ];
 const images = [
   {
-    src: "../img/portfolio/tripx/1.jpg",
+    src: "../img/portfolio/cse/main.jpg",
     alt: "cover",
     category: "architecture",
     size: "mil-long",
   },
   {
-    src: "../img/portfolio/tripx/2.jpg",
+    src: "../img/portfolio/cse/2.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/3.jpg",
+    src: "../img/portfolio/cse/3.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/4.jpg",
+    src: "../img/portfolio/cse/4.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/5.jpg",
+    src: "../img/portfolio/cse/5.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
 ];
+
 const page = () => {
   return (
     <TretoLayout noFooter>
@@ -107,67 +98,52 @@ const page = () => {
               <UsedTechnologies technologies={selectedTechnologies} />
             </div>
             <div className="mil-project mil-mb-60">
+              <ProjectDetailsIsotope images={images} />
               <div className="mil-divider" />
+
               <div className="row justify-content-between mil-mb-60">
                 <div className="col-lg-8">
                   <div className="mil-mb-60" />
                   <p className="mil-mb-30">
-                    As part of the pluridisciplinary project of the 4th year of
-                    our school, my team and I have created a digital solution
-                    called TripX. TripX is a micro-services based booking
-                    platform, for travel and hike agencies.
+                    During my time at CSE (Le Club Scientifique de l'ESI), I
+                    took on various roles such as Marketing Manager, Video
+                    Producer, Multimedia Manager, and Assistant. These roles
+                    allowed me to sharpen my skills in digital marketing, social
+                    media management, and multimedia production, contributing to
+                    the club's media strategy and boosting its visibility.
+                    <br />
+                    <br />
+                    Throughout my journey, I facilitated technical workshops,
+                    collaborated with talented individuals, and played a key
+                    role in organizing events like the Hack it hackathon. My
+                    involvement allowed me to sharpen my skills in motion
+                    graphics, photography, and event coverage. I also had the
+                    privilege of speaking at the Talaba Talk's show, discussing
+                    artificial intelligence, robotics, and the importance of
+                    university clubs in fostering creativity and growth.
+                    <br />
+                    <br />
+                    One of the most rewarding aspects of my experience was the
+                    opportunity to network with brilliant people who shaped my
+                    career. They helped me build a mindset focused on creativity
+                    and technical development, and together we formed a
+                    multidisciplinary community of friends that continues to
+                    inspire me both professionally and personally.
                   </p>
                 </div>
                 <div className="col-lg-4">
                   <div className="mil-timeline-nav">
-                    <ProjectLinks links={projectLinksData} />
-                    <Contributors contributors={contributorsData} />
+                    <WebSites websites={webSitesData} />
+                    <SocialMedia />
                   </div>
-                </div>
-              </div>
-              <ProjectDetailsIsotope images={images} />
-              <div className="row">
-                <div className="col-lg-12">
-                  <h3 className="mil-up mil-mb-30">Technical approach</h3>
-                </div>
-                <div className="col-lg-6">
-                  <p>
-                    For the frontend, the platform is composed of the client
-                    website, and 3 management dashboards. The client website
-                    allows users to book trips and hikes, and manage their
-                    bookings. The admin dashboard allow the admin to manage the
-                    users, travel and hike agencies. Each agency has a dashboard
-                    interface that allows the travel/hike agent to manage the
-                    trips and hikes, bookings and reviews. For the backend, the
-                    architecture is composed of 10 micro services, all
-                    subscribed to a kafka broker.
-                    <br />I was responsible for the UX design, the frontend part
-                    of the website and I too contributed to the architecture
-                    design, and the development of the entire platform.
-                  </p>
-                </div>
-                <div className="col-lg-6">
-                  <p>
-                    The frontend part was developed using NextJS, Shadcn/ui and
-                    Tailwind CSS, and the backend, using SpringBoot, NestJS,
-                    MongoDB, PostgreSQL, Redis, Apache Kafka and Stripe for
-                    online payments. This project was my first micro services
-                    project, and it was a great opportunity to learn more about
-                    Spring, NestJS, CQRS and event-driven architectures.
-                    <br />
-                    For the DevOps part, the entire infrastructure was deployed
-                    on a GCP virtual machine. We used Gitlab CI/CD to automate
-                    code deliveries, and Docker/Docker-compose to orchestrate
-                    the containers with an Nginx reverse proxy.
-                  </p>
                 </div>
               </div>
             </div>
             <div className="mil-pagination-panel">
-              <a href="#" className="mil-button mil-type-2 mil-mb-30">
+              <a href="nutriboost" className="mil-button mil-type-2 mil-mb-30">
                 Previous Project
               </a>
-              <a href="#" className="mil-button mil-mb-30">
+              <a href="wh" className="mil-button mil-mb-30">
                 Next Project
               </a>
             </div>

@@ -33,10 +33,7 @@ export const TechnologyEnum = {
     name: "NestJS",
     link: "https://nestjs.com/",
   },
-  MONGODB: {
-    name: "MongoDB",
-    link: "https://www.mongodb.com/",
-  },
+
   POSTGRESQL: {
     name: "PostgreSQL",
     link: "https://www.postgresql.org/",
@@ -124,5 +121,94 @@ export const TechnologyEnum = {
   OPENWEATHER_API: {
     name: "OpenWeather API",
     link: "https://openweathermap.org/api",
+  },
+
+  NODE: {
+    name: "Node.js",
+    link: "https://nodejs.org/",
+  },
+  EXPRESS: {
+    name: "Express.js",
+    link: "https://expressjs.com/",
+  },
+  MONGODB: {
+    name: "MongoDB",
+    link: "https://www.mongodb.com/",
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  UML: {
+    name: "UML",
+    link: "https://www.uml.org/",
+  },
+  FIGMA: {
+    name: "Figma",
+    link: "https://www.figma.com/",
+  },
+  DRAW_IO: {
+    name: "Draw.io",
+    link: "https://app.diagrams.net/",
+  },
+  CLICKUP: {
+    name: "ClickUp",
+    link: "https://clickup.com/",
+  },
+  GITHUB: {
+    name: "GitHub",
+    link: "https://github.com/",
+  },
+  POSTMAN: {
+    name: "Postman",
+    link: "https://www.postman.com/",
+  },
+  JAVA_MOBILE: {
+    name: "Java mobile",
+    link: "https://www.oracle.com/java/technologies/javase-downloads.html",
+  },
+  DIGITAL_MARKETING: {
+    name: "Digital Marketing",
+    link: "https://en.wikipedia.org/wiki/Digital_marketing",
+  },
+  MULTIMEDIA_PRODUCTION: {
+    name: "Multimedia Production",
+    link: "https://en.wikipedia.org/wiki/Multimedia",
+  },
+  NETWORKING: {
+    name: "Networking",
+    link: "https://en.wikipedia.org/wiki/Networking",
+  },
+  TECH_EVENTS_MAKING: {
+    name: "Tech Events Making",
+    link: "https://en.wikipedia.org/wiki/Technology_conference",
+  },
+  TEAM_MANAGEMENT: {
+    name: "Team Management",
+    link: "https://en.wikipedia.org/wiki/Team_management",
+  },
+  MORE: {
+    name: "And much more💡...",
+    link: "https://www.instagram.com/cse.club/",
+  },
+  COLLECTIVE_INTELLIGENCE: {
+    name: "Collective Intelligence",
+    link: "https://en.wikipedia.org/wiki/Collective_intelligence",
+  },
+  INTEGRITY: {
+    name: "Integrity",
+    link: "https://en.wikipedia.org/wiki/Integrity",
+  },
+  AUTHENTICITY: {
+    name: "Authenticity",
+    link: "https://en.wikipedia.org/wiki/Authenticity_(philosophy)",
+  },
+  IGNITE_MINDS: {
+    name: "Ignite Minds",
+    link: "https://en.wikipedia.org/wiki/Creative_thinking",
+  },
+  HIGHEST_STANDARDS: {
+    name: "Highest Standards",
+    link: "https://en.wikipedia.org/wiki/Standard_(metrology)",
   },
 };

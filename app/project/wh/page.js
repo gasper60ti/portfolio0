@@ -3,94 +3,94 @@ import TretoLayout from "@/layout/TretoLayout";
 import dynamic from "next/dynamic";
 import ProjectDetailsIsotope from "@/components/ProjectDetailsIsotope";
 import UsedTechnologies from "@/components/UsedTechnologies";
+import SocialMedia from "@/components/SocialMedia";
 import { TechnologyEnum } from "@/utility/TechnologyEnum";
-import ProjectLinks from "@/components/ProjectLinks";
-import Contributors from "@/components/Contributors";
-
-const projectLinksData = [
+import Hosts from "@/components/Hosts";
+import Links from "@/components/Links";
+const linksData = [
   {
-    name: "Frontend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_front.git",
+    name: "Youtube",
+    link: "https://www.youtube.com/@WledHormaTalks",
   },
   {
-    name: "Backend part",
-    link: "https://github.com/gasper60ti/tripx_projet2cs_back.git",
+    name: "Spotify",
+    link: "https://open.spotify.com/show/6reCIJwx0vtOMNs8al3xv0",
   },
   {
-    name: "Docs",
-    link: "https://drive.google.com/drive/folders/1eLmeNnm-4lh1n76RdFg6y7ih-ijBvdUe",
+    name: "X",
+    link: "https://twitter.com/WledHormaTalks",
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/wledhormatalks",
+  },
+  {
+    name: "Facebook",
+    link: "https://web.facebook.com/wledhormatalks",
   },
 ];
 
-const contributorsData = [
+const hostsData = [
   {
-    name: "Ilyes",
-    link: "https://www.linkedin.com/in/ilyas-benhammadi/",
+    name: "Amine",
+    link: "https://www.linkedin.com/in/amineremache/",
   },
   {
-    name: "Hakim",
-    link: "https://www.linkedin.com/in/hakim-allem/",
+    name: "Mehdi",
+    link: "https://www.linkedin.com/in/mehdi-karech/",
   },
   {
-    name: "Moustafa",
-    link: "https://www.linkedin.com/in/zahdour-moustafa/",
-  },
-  {
-    name: "Dr. Bedjaoui",
-    link: "https://www.linkedin.com/in/bedjaoui-mohammed/",
+    name: "Chems",
+    link: "https://www.linkedin.com/in/belkheir/",
   },
 ];
 
 const selectedTechnologies = [
-  TechnologyEnum.NEXTJS,
-  TechnologyEnum.REACT,
-  TechnologyEnum.TYPESCRIPT,
-  TechnologyEnum.SHADCN,
-  TechnologyEnum.TAILWINDCSS,
-  TechnologyEnum.STRIPE,
-  TechnologyEnum.SPRING,
-  TechnologyEnum.NESTJS,
-  TechnologyEnum.MONGODB,
-  TechnologyEnum.POSTGRESQL,
-  TechnologyEnum.REDIS,
-  TechnologyEnum.KAFKA,
-  TechnologyEnum.DOCKER,
-  TechnologyEnum.GITLAB,
-  TechnologyEnum.NGINX,
-  TechnologyEnum.GOOGLE_CLOUD,
+  TechnologyEnum.COLLECTIVE_INTELLIGENCE,
+  TechnologyEnum.INTEGRITY,
+  TechnologyEnum.AUTHENTICITY,
+  TechnologyEnum.IGNITE_MINDS,
+  TechnologyEnum.HIGHEST_STANDARDS,
 ];
 const images = [
   {
-    src: "../img/portfolio/tripx/1.jpg",
+    src: "../img/portfolio/wh/1.jpg",
     alt: "cover",
     category: "architecture",
-    size: "mil-long",
+    size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/2.jpg",
+    src: "../img/portfolio/wh/2.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/3.jpg",
+    src: "../img/portfolio/wh/3.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/4.jpg",
+    src: "../img/portfolio/wh/4.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/5.jpg",
+    src: "../img/portfolio/wh/5.jpg",
+    alt: "cover",
+    category: "sustainable",
+    size: "mil-square",
+  },
+  {
+    src: "../img/portfolio/wh/6.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
 ];
+
 const page = () => {
   return (
     <TretoLayout noFooter>
@@ -99,75 +99,67 @@ const page = () => {
           <div className="container">
             <div className="mil-top-banner mil-text-center">
               <p className="mil-upper mil-mb-30">
-                <span className="mil-accent">Frontend & Backend & DevOps</span>
+                <span className="mil-accent">Tech Podcast</span>
               </p>
               <h2 className="mil-up mil-mb-60">
-                TripX: multi-agency booking platform
+                Wled Horma: Innovating Tech and Economy via Podcasting
               </h2>
               <UsedTechnologies technologies={selectedTechnologies} />
             </div>
             <div className="mil-project mil-mb-60">
+              <ProjectDetailsIsotope images={images} />
               <div className="mil-divider" />
+
               <div className="row justify-content-between mil-mb-60">
                 <div className="col-lg-8">
                   <div className="mil-mb-60" />
                   <p className="mil-mb-30">
-                    As part of the pluridisciplinary project of the 4th year of
-                    our school, my team and I have created a digital solution
-                    called TripX. TripX is a micro-services based booking
-                    platform, for travel and hike agencies.
+                    I had the pleasure of working on the Wled Horma podcast,
+                    where I contributed to various aspects of production,
+                    including podcast editing, graphic design, short video
+                    editing, and copywriting. Wled Horma is a platform that aims
+                    to bridge the gap between technology and business, making
+                    complex ideas accessible and engaging for a diverse
+                    audience. Our podcast, presented by Amine, Chemsou, and
+                    Mehdi, delves into the intersections of life, education,
+                    technology, and business, focusing on the Algerian context.
+                    <br />
+                    <br />
+                    During my time with Wled Horma, I had the opportunity to
+                    contribute to the podcast's visual identity and audio
+                    quality, working alongside a talented team to produce
+                    engaging content. I focused on tasks like podcast editing,
+                    graphic design, short video editing, and copywriting, which
+                    helped me grow creatively and technically. By supporting the
+                    production of short videos and graphics for social media, I
+                    was able to assist in the marketing efforts that contributed
+                    to the podcast's growing reach within Algeria and beyond.
+                    This experience allowed me to learn from others and gain
+                    valuable insights into content creation and digital media.
+                    <br />
+                    <br />
+                    In addition to these tasks, working on Wled Horma allowed me
+                    to connect with brilliant individuals who have had a lasting
+                    impact on my career as an engineer. This experience not only
+                    helped me refine my creative and technical skills but also
+                    enabled me to build a network of friends and mentors,
+                    fostering a collaborative environment that continues to
+                    inspire me as well!
                   </p>
                 </div>
                 <div className="col-lg-4">
                   <div className="mil-timeline-nav">
-                    <ProjectLinks links={projectLinksData} />
-                    <Contributors contributors={contributorsData} />
+                    <Hosts hosts={hostsData} />
+                    <Links links={linksData} />
                   </div>
-                </div>
-              </div>
-              <ProjectDetailsIsotope images={images} />
-              <div className="row">
-                <div className="col-lg-12">
-                  <h3 className="mil-up mil-mb-30">Technical approach</h3>
-                </div>
-                <div className="col-lg-6">
-                  <p>
-                    For the frontend, the platform is composed of the client
-                    website, and 3 management dashboards. The client website
-                    allows users to book trips and hikes, and manage their
-                    bookings. The admin dashboard allow the admin to manage the
-                    users, travel and hike agencies. Each agency has a dashboard
-                    interface that allows the travel/hike agent to manage the
-                    trips and hikes, bookings and reviews. For the backend, the
-                    architecture is composed of 10 micro services, all
-                    subscribed to a kafka broker.
-                    <br />I was responsible for the UX design, the frontend part
-                    of the website and I too contributed to the architecture
-                    design, and the development of the entire platform.
-                  </p>
-                </div>
-                <div className="col-lg-6">
-                  <p>
-                    The frontend part was developed using NextJS, Shadcn/ui and
-                    Tailwind CSS, and the backend, using SpringBoot, NestJS,
-                    MongoDB, PostgreSQL, Redis, Apache Kafka and Stripe for
-                    online payments. This project was my first micro services
-                    project, and it was a great opportunity to learn more about
-                    Spring, NestJS, CQRS and event-driven architectures.
-                    <br />
-                    For the DevOps part, the entire infrastructure was deployed
-                    on a GCP virtual machine. We used Gitlab CI/CD to automate
-                    code deliveries, and Docker/Docker-compose to orchestrate
-                    the containers with an Nginx reverse proxy.
-                  </p>
                 </div>
               </div>
             </div>
             <div className="mil-pagination-panel">
-              <a href="#" className="mil-button mil-type-2 mil-mb-30">
+              <a href="cse" className="mil-button mil-type-2 mil-mb-30">
                 Previous Project
               </a>
-              <a href="#" className="mil-button mil-mb-30">
+              <a href="tripx" className="mil-button mil-mb-30">
                 Next Project
               </a>
             </div>

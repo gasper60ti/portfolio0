@@ -12,6 +12,10 @@ const projectLinksData = [
     name: "Documentation",
     link: "https://drive.google.com/drive/folders/1eLmeNnm-4lh1n76RdFg6y7ih-ijBvdUe",
   },
+  {
+    name: "Repository",
+    link: "https://github.com/akramex-dz/S9illo/tree/main",
+  },
 ];
 
 const contributorsData = [
@@ -59,31 +63,31 @@ const selectedTechnologies = [
 ];
 const images = [
   {
-    src: "../img/portfolio/tripx/1.jpg",
+    src: "../img/portfolio/s9illo/1.jpg",
     alt: "cover",
     category: "architecture",
     size: "mil-long",
   },
   {
-    src: "../img/portfolio/tripx/2.jpg",
+    src: "../img/portfolio/s9illo/2.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/3.jpg",
+    src: "../img/portfolio/s9illo/3.png",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/4.jpg",
+    src: "../img/portfolio/s9illo/4.png",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/5.jpg",
+    src: "../img/portfolio/s9illo/5.png",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",

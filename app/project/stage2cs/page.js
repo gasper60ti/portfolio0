@@ -40,31 +40,31 @@ const selectedTechnologies = [
 
 const images = [
   {
-    src: "../img/portfolio/tripx/1.jpg",
+    src: "../img/portfolio/stage2cs/1.jpg",
     alt: "cover",
     category: "architecture",
     size: "mil-long",
   },
   {
-    src: "../img/portfolio/tripx/2.jpg",
+    src: "../img/portfolio/stage2cs/2.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/3.jpg",
+    src: "../img/portfolio/stage2cs/3.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/4.jpg",
+    src: "../img/portfolio/stage2cs/4.jpg",
     alt: "cover",
     category: "interior",
     size: "mil-square",
   },
   {
-    src: "../img/portfolio/tripx/5.jpg",
+    src: "../img/portfolio/stage2cs/5.jpg",
     alt: "cover",
     category: "sustainable",
     size: "mil-square",
