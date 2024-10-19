@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import ProjectDetailsIsotope from "@/components/ProjectDetailsIsotope";
 import UsedTechnologies from "@/components/UsedTechnologies";
 import SocialMedia from "@/components/SocialMedia";
-import WebSites from "@/components/WebSites";
+import WebSites from "@/components/Websites"; // Corrected import
 import { TechnologyEnum } from "@/utility/TechnologyEnum";
 
 const socialMediaData = [
