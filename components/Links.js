@@ -4,7 +4,7 @@ import React from "react";
 const Links = ({ links }) => {
   return (
     <div className="mil-mb-30">
-      <p className="mil-upper mil-mb-10">Podcast Hosts:</p>
+      <p className="mil-upper mil-mb-10">Podcast Links:</p>
       {links.map((contributor, index) => (
         <React.Fragment key={index}>
           <a
